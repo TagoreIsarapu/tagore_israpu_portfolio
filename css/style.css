@@ -220,3 +220,44 @@ button:hover{
     color:#d1d5db;
     margin-bottom:20px;
 }
+/* Skills Section */
+
+#skills{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#38bdf8;
+    margin-bottom:50px;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+}
+
+.skill-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.skill-card p{
+    color:#d1d5db;
+    line-height:1.6;
+}
