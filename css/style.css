@@ -373,3 +373,40 @@ button:hover{
     color:#d1d5db;
     line-height:1.6;
 }
+/* Contact Section */
+
+#contact{
+    padding:100px 10%;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+}
+
+.contact-card{
+    background:#1e293b;
+    padding:40px;
+    border-radius:15px;
+    width:700px;
+    text-align:left;
+}
+
+.contact-card h3{
+    color:#38bdf8;
+    margin-top:20px;
+}
+
+.contact-card p{
+    margin-top:8px;
+    margin-bottom:20px;
+}
+
+.contact-card a{
+    color:#d1d5db;
+    text-decoration:none;
+}
+
+.contact-card a:hover{
+    color:#38bdf8;
+}
