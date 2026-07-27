@@ -25,10 +25,11 @@ header{
     position:fixed;
     top:0;
     left:0;
-    background:#111827;
+    background:rgba(15,23,42,0.8);
+    backdrop-filter:blur(10px);
     box-shadow:0 2px 10px rgba(0,0,0,.3);
+    z-index:1000;
 }
-
 nav{
     width:90%;
     margin:auto;
@@ -127,32 +128,29 @@ nav ul li a:hover{
     border-radius:50%;
     object-fit:cover;
     border:5px solid #38bdf8;
-    box-shadow:0 0 25px rgba(56,189,248,0.5);
+    box-shadow:
+0 0 20px #38bdf8,
+0 0 40px rgba(56,189,248,0.5);
 }
-button{
+.btn{
 
+    display:inline-block;
     padding:14px 30px;
-
-    border:none;
-
-    border-radius:8px;
-
     background:#38bdf8;
-
     color:white;
-
+    border-radius:30px;
+    text-decoration:none;
     font-size:17px;
-
-    cursor:pointer;
-
     transition:.3s;
+
 }
 
-button:hover{
+.btn:hover{
 
     background:#0284c7;
+    transform:scale(1.1);
+    box-shadow:0 0 20px #38bdf8;
 
-    transform:scale(1.05);
 }
 
 /* Social Links */
@@ -244,12 +242,14 @@ button:hover{
     padding:30px;
     border-radius:15px;
     transition:.3s;
-    border:2px solid transparent;
+    border:1px solid transparent;
 }
 
+
 .skill-card:hover{
-    transform:translateY(-8px);
-    border-color:#38bdf8;
+    background:#38bdf8;
+    color:black;
+    transform:scale(1.05);
 }
 
 .skill-card h3{
@@ -316,13 +316,14 @@ button:hover{
     background:#1e293b;
     padding:30px;
     border-radius:15px;
-    transition:.3s;
-    border:2px solid transparent;
+    transition:0.4s;
+    border:1px solid transparent;
 }
 
 .project-card:hover{
     transform:translateY(-10px);
     border-color:#38bdf8;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
 .project-card h3{
@@ -556,5 +557,31 @@ footer{
         flex-direction:column;
         gap:15px;
     }
+
+}
+section{
+    padding:100px 10%;
+}
+
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#38bdf8;
+    margin-bottom:50px;
+}
+section{
+
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+
+}
+
+
+section.show{
+
+    opacity:1;
+    transform:translateY(0);
 
 }
