@@ -335,3 +335,41 @@ button:hover{
     line-height:1.7;
     margin-bottom:15px;
 }
+/* Certifications Section */
+
+#certifications{
+    padding:100px 10%;
+}
+
+.certifications-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.certificate-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    border:2px solid transparent;
+    transition:.3s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+}
+
+.certificate-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.certificate-card h4{
+    margin-bottom:15px;
+}
+
+.certificate-card p{
+    color:#d1d5db;
+    line-height:1.6;
+}
