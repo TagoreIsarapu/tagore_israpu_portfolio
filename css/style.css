@@ -261,3 +261,42 @@ button:hover{
     color:#d1d5db;
     line-height:1.6;
 }
+/* Education Section */
+
+#education{
+    padding:100px 10%;
+}
+
+.education-container{
+    display:flex;
+    justify-content:center;
+}
+
+.education-card{
+    width:700px;
+    background:#1e293b;
+    padding:35px;
+    border-radius:15px;
+    border-left:6px solid #38bdf8;
+    transition:.3s;
+}
+
+.education-card:hover{
+    transform:translateY(-8px);
+}
+
+.education-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.education-card h4{
+    color:#ffffff;
+    margin-bottom:15px;
+}
+
+.education-card p{
+    color:#d1d5db;
+    margin-bottom:10px;
+    line-height:1.6;
+}
