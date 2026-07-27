@@ -67,46 +67,68 @@ nav ul li a:hover{
 
 /* Hero Section */
 
-#home{
+/* Hero Layout */
 
-    height:100vh;
+#home{
+    width:90%;
+    margin:auto;
+    min-height:100vh;
 
     display:flex;
-    flex-direction:column;
-
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
+    gap:50px;
 
-    text-align:center;
-
-    padding:20px;
+    padding-top:80px;
 }
 
-#home h1{
+.hero-text{
+    flex:1;
+}
 
-    font-size:55px;
+.hero-text h3{
+    font-size:28px;
+    color:#38bdf8;
+    margin-bottom:10px;
+}
 
+.hero-text h1{
+    font-size:60px;
     margin-bottom:15px;
 }
 
-#home h2{
-
-    color:#38bdf8;
-
+.hero-text h2{
+    font-size:28px;
+    color:#d1d5db;
     margin-bottom:20px;
 }
 
-#home p{
-
-    max-width:700px;
-
+.hero-text p{
     line-height:1.8;
-
-    color:#d1d5db;
-
-    margin-bottom:35px;
+    max-width:650px;
+    color:#cbd5e1;
+    margin-bottom:30px;
 }
 
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 25px rgba(56,189,248,0.5);
+}
 button{
 
     padding:14px 30px;
