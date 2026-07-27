@@ -410,3 +410,47 @@ button:hover{
 .contact-card a:hover{
     color:#38bdf8;
 }
+/* Footer */
+
+footer{
+    background:#111827;
+    padding:40px 10%;
+    margin-top:50px;
+}
+
+.footer-content{
+    text-align:center;
+}
+
+.footer-content h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.footer-content p{
+    color:#d1d5db;
+    margin-bottom:15px;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:20px 0;
+}
+
+.footer-links a{
+    color:#38bdf8;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+.copyright{
+    margin-top:20px;
+    font-size:14px;
+    color:#9ca3af;
+}
